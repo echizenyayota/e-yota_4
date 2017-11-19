@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*
+Theme: Name: MY THEME
+Author: Hiroshi Fukui
+Description: This is my original theme
+Version: 1.0
+*/
+
+/*　------------------------　全体　------------------------　*/
+
+.mce-content-body {
+  max-width: 747px;
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 'sans-serif';
+  line-height: 1.5;
+}
+
+
+/*　------------------------　記事　------------------------　*/
+
+/* 記事 */
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 599px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+/* 小見出し */
+
+h2 {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00a0e9;
+  font-size: 24px;
+  clear: both;
+}
+
+h2:before {
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  content: '\f14a';
+  color: #00a0e9;
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  line-height: 1;
+}
+
+h3 {
+  margin-top: 25px;
+  padding-left: 10px;
+  border-left: 10px solid #a5e2fe;
+  font-size: 18px;
+  clear: both;
+}
+
+@media(max-width: 599px) {
+  h2 {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+  h2:before {
+    font-size: 20px;
+  }
+  h3 {
+    padding-left: 6px;
+    font-size: 15px;
+
+  }
+}
+
+/* 補足情報 */
+.point {
+  position: relative;
+  margin: 40px 0 30px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background-color: #cfedb7;
+  font-size: 14px;
+  clear: both;
+}
+
+.point:before	{
+  position: absolute;
+	left: 15px;
+	top: -15px;
+	content: '\f0eb';
+	z-index: 2;
+	width: 32px;
+	height: 32px;
+	padding-top: 3px;
+	border-radius: 16px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #5ab80e;
+	color: #ffffff;
+	font-family: 'FontAwesome';
+	font-size: 26px;
+	line-height: 1;
+	text-align: center;
+}
+
+.point:after	{
+  position: absolute;
+	left: 32px;
+	top: -8px;
+	z-index: 1;
+	content: 'POINT';
+	padding: 3px 10px 3px 20px;
+	border-radius: 5px;
+	background-color: #5ab80e;
+	color: #ffffff;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+}
+
+/* 注意書き */
+.attention	{
+  position: relative;
+	margin: 40px 0 30px;
+	padding: 20px;
+	border-radius: 10px;
+	border: dotted 2px #ff0000;
+	background-color: #ffefef;
+	font-size: 14px;
+	clear: both;
+}
+
+.attention:before	{
+  position: absolute;
+	left: 20px;
+	top: -15px;
+	content: '\f071';
+	background-color: #ffffff;
+	color: #ff0000;
+	font-family: 'FontAwesome';
+	font-size: 26px;
+	line-height: 1;
+}
+
+/*　------------------------　画像　------------------------　*/
+
+/* 編集画面の標準の設定を解除 */
+
+.alignleft, .alignright {
+  float: none;
+}
+
+.wp-caption {
+  float: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* 画像のキャプション */
+.wp-caption-dd {
+  margin-bottom: 5px;
+  color: #666666;
+  font-size: 10px;
+  text-align: center;
+}
+
+.wp-caption-dd a {
+  color: #666666;
+}
+
+/* 画像の配置 */
+.aligncenter {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: : 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Internet Explorer用の設定 */
+a img {
+  border: none;
+}
+
+/* 大きい画像用の設定 */
+img, .wp-caption {
+  max-width: 100%;
+  height: none;
+}
+
+/*　------------------------　外部コンテンツ　------------------------　*/
+
+iframe {
+  max-width: 100%;
+}
+
+/* YouTubeのビデオ(キャッシュをクリアした場合いらない) */
+/*
+.ytvideo	{
+  position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ytvideo iframe	{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+*/

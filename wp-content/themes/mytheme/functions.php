@@ -241,7 +241,7 @@ function my_archive_link( $link_html, $url, $text, $format, $before, $after){
 }
 add_filter( 'get_archives_link','my_archive_link', 10, 6 );
 
-//そこそこ精度が良い関連記事コード
+//そこそこ精度が良い関連記事コード https://ikisakianco.com/wordpress-noplugin-related-posts
 function get_related_posts($show_post = 5) {
   $post_id = get_post()->ID;
   // 個別記事、カスタム投稿 で表示する

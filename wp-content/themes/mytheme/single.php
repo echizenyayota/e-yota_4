@@ -130,9 +130,10 @@
           if ($myposts) : ?>
 
         <aside class="mymenu mymenu-thumb mymenu-related">
+          <?php $related_posts = get_related_posts(4); ?>
           <h2>関連記事</h2>
           <ul>
-            <?php foreach($myposts as $post): setup_postdata($post); ?>
+            <?php foreach($related_posts as $related_post): setup_postdata($related_post); ?>
               <li>
                 <a href="<?php the_permalink(); ?>">
                 <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>

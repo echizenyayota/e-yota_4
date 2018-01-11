@@ -86,7 +86,6 @@
     <meta name="<?php echo esc_attr( 'twitter:site' ); ?>" content="<?php echo esc_attr( '@echizenya_yota' ); ?>">
     <meta name="<?php echo esc_attr( 'twitter:card' ); ?>" content="<?php echo esc_attr( 'summary_large_image' ); ?>">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/ecoteki_favicon.ico" />
-
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
